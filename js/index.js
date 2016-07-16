@@ -12,7 +12,7 @@ $(document).ready(function() {
     var point = $('input[name=blueKeyPoint]').val();
     $('.blueList').append('<div class="point">' + point + '</div>');
     $('.blueKeyPoint').val('');
-    $('#blueCount').text('140');
+    $('#blueCount').text('80');
   }
   $('.addBlue').on('click', function() {
     addBlue();
@@ -28,7 +28,7 @@ $(document).ready(function() {
     var point = $('input[name=whiteKeyPoint]').val();
     $('.whiteList').append('<div class="point">' + point + '</div>');
     $('.whiteKeyPoint').val('');
-    $('#whiteCount').text('140');
+    $('#whiteCount').text('80');
   }
   $('.addWhite').on('click', function() {
     addWhite();
@@ -44,7 +44,7 @@ $(document).ready(function() {
     var point = $('input[name=redKeyPoint]').val();
     $('.redList').append('<div class="point">' + point + '</div>');
     $('.redKeyPoint').val('');
-    $('#redCount').text('140');
+    $('#redCount').text('80');
   }
   $('.addRed').on('click', function() {
     addRed();
@@ -60,7 +60,7 @@ $(document).ready(function() {
     var point = $('input[name=yellowKeyPoint]').val();
     $('.yellowList').append('<div class="point">' + point + '</div>');
     $('.yellowKeyPoint').val('');
-    $('#yellowCount').text('140');
+    $('#yellowCount').text('80');
   }
   $('.addYellow').on('click', function() {
     addYellow();
@@ -76,7 +76,7 @@ $(document).ready(function() {
     var point = $('input[name=blackKeyPoint]').val();
     $('.blackList').append('<div class="point">' + point + '</div>');
     $('.blackKeyPoint').val('');
-    $('#blackCount').text('140');
+    $('#blackCount').text('80');
   }
   $('.addBlack').on('click', function() {
     addBlack();
@@ -92,7 +92,7 @@ $(document).ready(function() {
     var point = $('input[name=greenKeyPoint]').val();
     $('.greenList').append('<div class="point">' + point + '</div>');
     $('.greenKeyPoint').val('');
-    $('#greenCount').text('140');
+    $('#greenCount').text('80');
   }
   $('.addGreen').on('click', function() {
     addGreen();
@@ -104,7 +104,7 @@ $(document).ready(function() {
     }
   });
 
-  // counts 
+  // counts
   function text_counter(input_text, target) {
     var max = input_text.attr("maxlength");
     input_text.keyup(function() {
