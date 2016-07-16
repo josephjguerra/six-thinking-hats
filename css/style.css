@@ -157,12 +157,10 @@ input {
   margin-top: 40px;
 }
 .results {
-  border: 5px solid #000;
   display: flex;
   flex-direction: column;
 }
 .results-group {
-  border: 2px dashed #808080;
   display: flex;
   flex-direction: row;
   width: 100%;
