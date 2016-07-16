@@ -18,13 +18,19 @@ $dark-red     = #4c0d09
 body
   background $white
   font normal 1em/1.5 Lato, sans-serif
-  //font normal 1em/1.5 "Helvetica Neue", sans-serif
+  // font normal 1em/1.5 "Helvetica Neue", sans-serif
   text-align center
   margin 0
   padding 0
 
 a
   text-decoration none
+  color inherit
+  font-weight 700
+  &:hover
+    text-decoration underline
+  &:visited
+    color inherit
 
 nav
   border-bottom 2px solid $black
@@ -71,10 +77,9 @@ h1
   padding 8px 12px
   margin 10px
   border-radius 5px
-
-.button:hover
-  color $white
-  background-color $black
+  &:hover
+    color $white
+    background-color $black
 
 h2
   font-size 2em
@@ -143,8 +148,32 @@ input
   margin auto
   text-align right
 
+.button-black
+  color $white
+  border 2px solid $white
+  &:hover
+    color $black
+    background-color $white
+
+#blackInput
+  border 2px solid $white
+
 .next
   margin-top 40px
+
+.results
+  border 5px solid black
+  display flex
+  flex-direction column
+
+.results-group
+  border 2px dashed gray
+  display flex
+  flex-direction row
+  width 100%
+
+.result
+  width 100%
 
 table
   text-align left
@@ -166,7 +195,11 @@ tr:nth-child(odd)
   clear both
   overflow auto
 
-@media (max-width: 700px)
+@media screen and (max-width: 900px)
+  .results-group
+    flex-direction column
+
+@media screen and (max-width: 700px)
   h1
     font-size 2em
 
@@ -179,7 +212,7 @@ tr:nth-child(odd)
   p
     font-size 1em
 
-@media (max-width: 500px)
+@media screen and (max-width: 500px)
   .left,
   .right
     float none

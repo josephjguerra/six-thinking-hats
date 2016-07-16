@@ -41,8 +41,7 @@
 
 <div class="hat green learn">
   <h1>Who made Six Thinking Hats?</h1>
-  <h2>Edward de Bono</h2>
-  <p>Dr. De Bono is a Maltese physician, psychologist, author, inventor, and consultant. He wrote the Six Thinking Hats book in 1985. He has authored 56 other books on thought.</p>
+  <p><a href="https://en.wikipedia.org/wiki/Edward_de_Bono">Dr. Edward de Bono</a>, a Maltese physician, psychologist, author, inventor, and consultant, wrote the Six Thinking Hats book in 1985. He has authored over 50 other books on thought.</p>
   <p>He is a proponent of teaching thinking as a subject in schools. He also teaches thinking methods to government agencies, corporate clients, organizations and individuals, in private and publicly group sessions.</p>
 </div>
 
@@ -112,7 +111,7 @@
   <p>process, organization, big picture</p>
   <form name="bluehat">
     <input id="blueInput" maxlength="140" type="text" class="blueKeyPoint" name="blueKeyPoint" placeholder="enter key blue hat ideas here" />
-    <div class=submitinput>
+    <div class="submitinput">
       <span id="blueCount" class="count">140</span>
       <a class="button addBlue">add</a>
     </div>
@@ -127,7 +126,7 @@
   <p>neutral, objective, facts</p>
   <form name="whitehat">
     <input id="whiteInput" maxlength="140" type="text" class="whiteKeyPoint" name="whiteKeyPoint" placeholder="enter key white hat ideas here" />
-    <div class=submitinput>
+    <div class="submitinput">
       <span id="whiteCount" class="count">140</span>
       <a class="button addWhite">add</a>
     </div>
@@ -142,7 +141,7 @@
   <p>emotion, gut, instinct</p>
   <form name="redhat">
     <input id="redInput" maxlength="140" type="text" class="redKeyPoint" name="redKeyPoint" placeholder="enter key red hat ideas here" />
-    <div class=submitinput>
+    <div class="submitinput">
       <span id="redCount" class="count">140</span>
       <a class="button addRed">add</a>
     </div>
@@ -157,7 +156,7 @@
   <p>positive, benefits, hopes</p>
   <form name="yellowhat">
     <input id="yellowInput" maxlength="140" type="text" class="yellowKeyPoint" name="yellowKeyPoint" placeholder="enter key yellow hat ideas here" />
-    <div class=submitinput>
+    <div class="submitinput">
       <span id="yellowCount" class="count">140</span>
       <a class="button addYellow">add</a>
     </div>
@@ -166,19 +165,19 @@
   <a href="#g5" class="button next">Next Hat</a>
 </div>
 
-<div class="hat white" id="g5">
+<div class="hat black" id="g5">
   <p>My problem is: {{problemText}}</p>
   <h2>black hat</h2>
   <p>careful, cautious, critical</p>
   <form name="blackhat">
     <input id="blackInput" maxlength="140" type="text" class="blackKeyPoint" name="blackKeyPoint" placeholder="enter key black hat ideas here" />
-    <div class=submitinput>
+    <div class="submitinput">
       <span id="blackCount" class="count">140</span>
-      <a class="button addBlack">add</a>
+      <a class="button addBlack button-black">add</a>
     </div>
     <div class="blackList"></div>
   </form>
-  <a href="#g6" class="button next">Next Hat</a>
+  <a href="#g6" class="button next button-black">Next Hat</a>
 </div>
 
 <div class="hat green" id="g6">
@@ -187,7 +186,7 @@
   <p>creative, free, growth</p>
   <form name="greenhat">
     <input id="greenInput" maxlength="140" type="text" class="greenKeyPoint" name="greenKeyPoint" placeholder="enter key green hat ideas here" />
-    <div class=submitinput>
+    <div class="submitinput">
       <span id="greenCount" class="count">140</span>
       <a class="button addGreen">add</a>
     </div>
@@ -196,22 +195,44 @@
   <a href="#finish" class="button next">Finish!</a>
 </div>
 
-<div class="results hat white" id="finish">
+<div class="hat white" id="finish">
   <h1>Guided Session Results</h1>
   <p>Great job! Here are your key points.</p>
   <p>Problem: {{problemText}}</p>
-  <h2>Blue Hat</h2>
-  <div class="blueList"></div>
-  <h2>White Hat</h2>
-  <div class="whiteList"></div>
-  <h2>Red Hat</h2>
-  <div class="redList"></div>
-  <h2>Yellow Hat</h2>
-  <div class="yellowList"></div>
-  <h2>Black Hat</h2>
-  <div class="blackList"></div>
-  <h2>Green Hat</h2>
-  <div class="greenList"></div>
+
+  <div class="results">
+    <div class="results-group">
+      <div class="blue result">
+        <h2>Blue Hat</h2>
+        <div class="blueList"></div>
+      </div>
+      <div class="white result">
+        <h2>White Hat</h2>
+        <div class="whiteList"></div>
+      </div>
+    </div>
+    <div class="results-group">
+      <div class="red result">
+        <h2>Red Hat</h2>
+        <div class="redList"></div>
+      </div>
+      <div class="yellow result">
+        <h2>Yellow Hat</h2>
+        <div class="yellowList"></div>
+      </div>
+    </div>
+    <div class="results-group">
+      <div class="black result">
+        <h2>Black Hat</h2>
+        <div class="blackList"></div>
+      </div>
+      <div class="green result">
+        <h2>Green Hat</h2>
+        <div class="greenList"></div>
+      </div>
+    </div>
+  </div>
+
 </div>
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src='js/vue.min.js'></script>
