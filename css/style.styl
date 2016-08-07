@@ -81,6 +81,11 @@ h1
     color $white
     background-color $black
 
+.hat-image
+  width 120px
+  margin 10px
+  border-radius 5px
+
 h2
   font-size 2em
 
@@ -188,14 +193,23 @@ input
 
 table
   text-align left
-  border 1px solid $black
+  border 1px solid $dark-yellow
+  border-radius 5px
   margin auto
+  img
+    width 24px
 
 th, td
   padding 5px
 
 th
   background-color $light-yellow - 30
+
+th:nth-child(2),
+th:nth-child(3),
+td:nth-child(2),
+td:nth-child(3)
+  text-align center
 
 tr:nth-child(odd)
   background-color $light-yellow - 10
