@@ -79,6 +79,7 @@ h1 {
 .hat-image {
   width: 120px;
   margin: 10px;
+  border-radius: 5px;
 }
 h2 {
   font-size: 2em;
@@ -185,7 +186,8 @@ input {
 }
 table {
   text-align: left;
-  border: 1px solid #3c3c3c;
+  border: 1px solid #756b14;
+  border-radius: 5px;
   margin: auto;
 }
 table img {

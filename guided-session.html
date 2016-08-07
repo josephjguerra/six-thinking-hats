@@ -12,17 +12,19 @@
 
 <nav class="clearfix">
   <div class="left">
-    <img src="img/yellowhat2.svg" alt="hat icon" />
+    <img src="img/yellowhat3.svg" alt="hat icon" />
     <a href="index.html">Six Thinking Hats</a>
   </div>
   <div class="right">
     <a href="index.html">Learn</a>
-    <a href="#session">Think</a>
+    <a href="#">Think</a>
     <a href="#signup">Sign Up</a>
   </div>
 </nav>
 
 <div class="hat white session" id="session">
+  <h1>Guided Thinking Session</h1>
+  <p>Start solving, brainstorming, or exploring</p>
   <div class="">
     <img class="hat-image" src="img/whitehat2.svg" alt="hat">
     <img class="hat-image" src="img/redhat.svg" alt="hat">
@@ -31,8 +33,6 @@
     <img class="hat-image" src="img/bluehat.svg" alt="hat">
     <img class="hat-image" src="img/greenhat.svg" alt="hat">
   </div>
-  <h1>Guided Thinking Session</h1>
-  <p>Start solving, brainstorming, or exploring</p>
   <h2>My problem is</h2>
   <input id="problemInput" v-model="problemText" maxlength="80" type="text" name="problem" placeholder="...enter your problem to solve here"/>
   <div class=submitinput>
@@ -164,35 +164,45 @@
 <div class="hat white" id="finish">
   <h1>Guided Session Results</h1>
   <p>Great job! Here are your key points.</p>
+  <div class="call-to-action">
+    <a href="#" class="button">Print</a>
+    <a href="#" class="button">Email</a>
+  </div>
   <p>Problem: {{problemText}}</p>
   <div class="results">
     <div class="results-group">
       <div class="blue result">
         <h2>Blue Hat</h2>
+        <img class="hat-image" src="img/bluehat.svg" alt="hat">
         <div class="blueList"></div>
       </div>
       <div class="white result">
         <h2>White Hat</h2>
+        <img class="hat-image" src="img/whitehat.svg" alt="hat">
         <div class="whiteList"></div>
       </div>
     </div>
     <div class="results-group">
       <div class="red result">
         <h2>Red Hat</h2>
+        <img class="hat-image" src="img/redhat.svg" alt="hat">
         <div class="redList"></div>
       </div>
       <div class="yellow result">
         <h2>Yellow Hat</h2>
+        <img class="hat-image" src="img/yellowhat.svg" alt="hat">
         <div class="yellowList"></div>
       </div>
     </div>
     <div class="results-group">
       <div class="black result">
         <h2>Black Hat</h2>
+        <img class="hat-image" src="img/blackhat2.svg" alt="hat">
         <div class="blackList"></div>
       </div>
       <div class="green result">
         <h2>Green Hat</h2>
+        <img class="hat-image" src="img/greenhat.svg" alt="hat">
         <div class="greenList"></div>
       </div>
     </div>
