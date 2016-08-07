@@ -184,12 +184,21 @@ table {
   border: 1px solid #3c3c3c;
   margin: auto;
 }
+table img {
+  width: 24px;
+}
 th,
 td {
   padding: 5px;
 }
 th {
   background-color: #e1d77f;
+}
+th:nth-child(2),
+th:nth-child(3),
+td:nth-child(2),
+td:nth-child(3) {
+  text-align: center;
 }
 tr:nth-child(odd) {
   background-color: #f5eb93;
