@@ -76,6 +76,10 @@ h1 {
   color: #f5f5f5;
   background-color: #3c3c3c;
 }
+.hat-image {
+  width: 120px;
+  margin: 10px;
+}
 h2 {
   font-size: 2em;
 }
