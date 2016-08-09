@@ -12,26 +12,22 @@ body {
 }
 a {
   text-decoration: none;
-  color: inherit;
-  font-weight: 700;
 }
 a:hover {
   text-decoration: underline;
 }
-a:visited {
-  color: inherit;
-}
 nav {
-  border-bottom: 2px solid #3c3c3c;
   background-color: #f5f5f5;
+  padding: 10px;
 }
 nav a {
   display: inline-block;
-  padding: 10px;
+  padding: 10px 20px;
   color: #3c3c3c;
 }
 .left {
   float: left;
+  font-weight: 700;
 }
 .left img {
   width: 24px;
@@ -80,6 +76,10 @@ h1 {
   width: 120px;
   margin: 10px;
   border-radius: 5px;
+}
+#home .hat-image,
+#session .hat-image {
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
 }
 h2 {
   font-size: 2em;
